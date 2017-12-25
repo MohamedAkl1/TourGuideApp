@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tour Guide App</string>
+    <string name="cairo">Cairo</string>
+    <string name="cairo_description_1">is the capital of Egypt, and largest city of Egypt, it is known for it\'s famous monuments of ancient Egypt and it has more than 1000 mosque.</string>
+    <string name="cairo_description_2">We will tell you about most of the stuff that cairo is famous with, hit the the navigation button on the top left or swipe left  to know more</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
