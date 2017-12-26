@@ -9,7 +9,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     nvDrawer.getMenu().getItem(i).setChecked(false);
                 }
                 Fragment fragment = new Fragment();
-                Class fragmentClass = null;
+                Class fragmentClass;
                 switch (item.getItemId()){
                     case R.id.restaurants:
                         fragmentClass = RestaurantsFragment.class;
@@ -61,9 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
                 try {
                     fragment = (Fragment) fragmentClass.newInstance();
-                } catch (InstantiationException e) {
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
+                } catch (InstantiationException | IllegalAccessException e) {
                     e.printStackTrace();
                 }
 
@@ -78,10 +75,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        if(toggle.onOptionsItemSelected(item)){
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return toggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
     }
 }

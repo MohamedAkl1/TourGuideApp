@@ -24,12 +24,12 @@ public class ArtMuseumsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_art_museums,container,false);
 
-        getActivity().setTitle("Art Museums");
+        getActivity().setTitle(getString(R.string.art_museum));
         listView = v.findViewById(R.id.art_museums_list);
         List<Attraction> lists = new ArrayList<>();
-        lists.add(new Attraction("Museum Of Modern Egyptian Art","Gezira Exhibition"));
-        lists.add(new Attraction("Museum Of Islamic Art Cairo","Bab Al Khalk square"));
-        lists.add(new Attraction("Islamic Ceramics Museum", "Al Sheikh Al Marsafi"));
+        lists.add(new Attraction(getString(R.string.modern_art),getString(R.string.gezira_exhibition)));
+        lists.add(new Attraction(getString(R.string.islamic_art),getString(R.string.bab_al_khalk)));
+        lists.add(new Attraction(getString(R.string.islamic_ceramics), getString(R.string.al_sheikh)));
         AttractionAdapter adapter = new AttractionAdapter(getContext(),lists);
         listView.setAdapter(adapter);
         return v;

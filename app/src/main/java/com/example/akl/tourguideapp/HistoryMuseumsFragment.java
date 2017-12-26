@@ -24,12 +24,12 @@ public class HistoryMuseumsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_history_museums,container,false);
 
-        getActivity().setTitle("History Museums");
+        getActivity().setTitle(getString(R.string.history_museums));
         listView = v.findViewById(R.id.history_museums_list);
         List<Attraction> lists = new ArrayList<>();
-        lists.add(new Attraction("Egyptian Museum","Al Tahrir"));
-        lists.add(new Attraction("Manial Palace","Manial"));
-        lists.add(new Attraction("Gayer-Anderson Museum", "Old Cairo"));
+        lists.add(new Attraction(getString(R.string.egyptian_museum),getString(R.string.al_tahrir)));
+        lists.add(new Attraction(getString(R.string.manial_palace),getString(R.string.manial)));
+        lists.add(new Attraction(getString(R.string.ga_museum), getString(R.string.old_cairo)));
         AttractionAdapter adapter = new AttractionAdapter(getContext(),lists);
         listView.setAdapter(adapter);
         return v;

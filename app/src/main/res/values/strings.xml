@@ -2,11 +2,36 @@
     <string name="app_name">Tour Guide App</string>
     <string name="cairo">Cairo</string>
     <string name="cairo_description_1">is the capital of Egypt, and largest city of Egypt, it is known for it\'s famous monuments of ancient Egypt and it has more than 1000 mosque.</string>
-    <string name="cairo_description_2">We will tell you about most of the stuff that cairo is famous with, hit the the navigation button on the top left or swipe left  to know more</string>
+    <string name="cairo_description_2">We will tell you about most of the stuff that cairo is famous with, hit the navigation button on the top left or swipe left  to know more</string>
     <string name="title_activity_main">MainActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="buffalo_burger">Buffalo Burger</string>
+    <string name="new_cairo">new cairo</string>
+    <string name="kfc">KFC</string>
+    <string name="downtown">Down Town</string>
+    <string name="butcher_burger">Butcher\'s Burger</string>
+    <string name="fifth_settlement">Fifth Settlement</string>
+    <string name="modern_art">Museum Of Modern Egyptian Art</string>
+    <string name="islamic_art">Museum Of Islamic Art Cairo</string>
+    <string name="islamic_ceramics">Islamic Ceramics Museum</string>
+    <string name="gezira_exhibition">Gezira Exhibition</string>
+    <string name="bab_al_khalk">Bab Al Khalk square</string>
+    <string name="al_sheikh">Al Sheikh Al Marsafi</string>
+    <string name="art_museum">Art Museums</string>
+    <string name="malls">Malls</string>
+    <string name="cairo_festival_mall">Cairo Festival Mall</string>
+    <string name="city_stars">City Stars</string>
+    <string name="galleria_mall">Galleria Mall</string>
+    <string name="history_museums">History Museums</string>
+    <string name="egyptian_museum">Egyptian Museum</string>
+    <string name="al_tahrir">Al Tahrir</string>
+    <string name="manial_palace">Manial Palace</string>
+    <string name="manial">Manial</string>
+    <string name="ga_museum">Gayer-Anderson Museum</string>
+    <string name="old_cairo">Old Cairo</string>
 </resources>
